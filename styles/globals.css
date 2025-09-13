@@ -28,8 +28,49 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Make swiper dots sit below slider */
+
 .swiper-pagination {
-  bottom: -10px !important;  /* push dots outside */
+  position: relative !important;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+
+.swiper-arrows {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+ .swiper-button-prev,
+.swiper-button-next {
+ 
+  font-size: 2px !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  color: #000 !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;    
+  background: #e5e5e5 !important; 
+} 
+
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important;  
+  color: #000 !important;      
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 8px !important;   
+  color: #000 !important;  
 }
 
